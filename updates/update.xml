@@ -18,8 +18,6 @@
         <maintainerurl>https://joomtheme.com</maintainerurl>
         <targetplatform name="joomla" version="6\.1"/>
         <php_minimum>8.3.0</php_minimum>
-        <sha256>f89534d6223a8a58d5608d7d8361b23c5bd2ef10295466379b53457328da3dbb</sha256>
-        <sha384>9684bc108767feea0911100dcb9b094302afb7db89034cd95bc53c6d1be05d03ddce73bb7549829454e820586952b0e5</sha384>
-        <sha512>179021d3358fd1526370211e2c7c1f8f6881bb884a648547b575dc5b2e59e21ef6bf34a657355bbf12b037e86c724fd56f739a302ca54b0460961ccad43aa079</sha512>
+        <sha256>e0450bab67f25c1eaa2964c846b31c21afafb7cc05becf648d56bf807a41e99d</sha256>
     </update>
 </updates>
