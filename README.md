@@ -1,6 +1,6 @@
 # JoomTheme Gallery
 
-[Türkçe](README.tr-TR.md) · [Release 0.7.3](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) · [Download package](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) · [Support](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
+[Live demo](https://joomtheme.github.io/JoomTheme-Gallery/) · [Türkçe](README.tr-TR.md) · [Release 0.7.3](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) · [Download package](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) · [Support](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
 
 JoomTheme Gallery is a native Joomla 6 gallery extension distributed as one installable package:
 
@@ -42,12 +42,13 @@ The package registers the following public Joomla services:
 - Update feed: [`updates/update.xml`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/update.xml)
 - Joomla changelog: [`updates/changelog.xml`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/changelog.xml)
 
-Joomla checks the feed from **System → Update → Extensions** and validates the published package against SHA-256, SHA-384 and SHA-512 checksums before installation.
+Joomla checks the feed from **System → Update → Extensions** and validates the published package against its SHA-256 checksum before installation.
 
 Installable packages are published as immutable GitHub Release assets. GitHub's automatically generated source archives are not Joomla installation packages.
 
 ## Documentation and support
 
+- [Live demo and product tour](https://joomtheme.github.io/JoomTheme-Gallery/)
 - [Release history](CHANGELOG.md)
 - [Support guide](SUPPORT.md)
 - [Contributing](CONTRIBUTING.md)

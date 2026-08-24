@@ -1,6 +1,6 @@
 # JoomTheme Gallery
 
-[English](README.md) · [0.7.3 sürümü](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) · [Paketi indir](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) · [Destek](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
+[Canlı demo](https://joomtheme.github.io/JoomTheme-Gallery/) · [English](README.md) · [0.7.3 sürümü](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) · [Paketi indir](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) · [Destek](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
 
 JoomTheme Gallery, tek kurulum paketiyle dağıtılan yerel bir Joomla 6 galeri eklentisidir:
 
@@ -42,12 +42,13 @@ Paket aşağıdaki genel Joomla servislerini otomatik olarak kaydeder:
 - Güncelleme akışı: [`updates/update.xml`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/update.xml)
 - Joomla değişiklik günlüğü: [`updates/changelog.xml`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/changelog.xml)
 
-Joomla, **Sistem → Güncelleme → Eklentiler** ekranından akışı denetler ve kurulumdan önce yayınlanan paketi SHA-256, SHA-384 ve SHA-512 karmalarıyla doğrular.
+Joomla, **Sistem → Güncelleme → Eklentiler** ekranından akışı denetler ve kurulumdan önce yayınlanan paketi SHA-256 karmasıyla doğrular.
 
 Kurulabilir paketler değişmez GitHub Release varlıkları olarak yayınlanır. GitHub'ın otomatik oluşturduğu kaynak kodu arşivleri Joomla kurulum paketi değildir.
 
 ## Belgeleme ve destek
 
+- [Canlı demo ve ürün turu](https://joomtheme.github.io/JoomTheme-Gallery/)
 - [Sürüm geçmişi](CHANGELOG.md)
 - [Destek rehberi](SUPPORT.md)
 - [Katkıda bulunma](CONTRIBUTING.md)
