@@ -705,7 +705,7 @@ h1 {
 }
 
 .image-dialog::backdrop {
-    background: rgba(15, 20, 31, .7);
+    background: rgba(17, 26, 46, .58);
     backdrop-filter: blur(4px);
 }
 
@@ -898,13 +898,3 @@ h1 {
     html {
         scroll-behavior: auto;
     }
-
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-    }
-}
