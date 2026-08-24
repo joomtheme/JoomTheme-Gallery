@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/joomtheme/JoomTheme-Gallery/security/policy
+    about: Read the private vulnerability reporting instructions.
+  - name: JoomTheme website
+    url: https://joomtheme.com
+    about: Visit the developer website.

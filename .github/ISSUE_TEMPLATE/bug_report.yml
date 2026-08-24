@@ -1,0 +1,82 @@
+name: Bug report
+description: Report a reproducible JoomTheme Gallery problem
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please remove private data and use the security policy for vulnerabilities.
+  - type: input
+    id: extension_version
+    attributes:
+      label: JoomTheme Gallery version
+      placeholder: 0.7.3
+    validations:
+      required: true
+  - type: input
+    id: joomla_version
+    attributes:
+      label: Joomla version
+      placeholder: 6.1.3
+    validations:
+      required: true
+  - type: input
+    id: php_version
+    attributes:
+      label: PHP version
+      placeholder: 8.3.x
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Administrator component
+        - Frontend component
+        - Site module
+        - Installation or update
+        - Uninstall
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that triggers the problem.
+      placeholder: |
+        1. Open …
+        2. Select …
+        3. Observe …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and additional context
+      description: Add sanitized Joomla/PHP log excerpts, browser details or screenshots.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I tested the latest published package.
+          required: true
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: This report contains no credentials, personal data or exploit details.
+          required: true

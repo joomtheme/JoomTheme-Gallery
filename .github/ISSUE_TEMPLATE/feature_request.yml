@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an accessible, Joomla-native improvement
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain what is difficult today and who is affected.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the desired behavior without prescribing implementation details unless needed.
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility and Joomla integration
+      description: Note keyboard, screen-reader, responsive, ACL, multilingual or template considerations.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
+        - label: The proposal does not require modifying Joomla core files.
+          required: true
