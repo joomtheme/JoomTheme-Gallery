@@ -3,11 +3,13 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import io
 import re
 import sys
 import urllib.parse
+import urllib.request
 import zipfile
 from pathlib import Path, PurePosixPath
 from xml.etree import ElementTree as ET
@@ -21,6 +23,7 @@ REQUIRED_UPDATE_FIELDS = ("name", "element", "type", "version", "downloads", "ta
 HASHES = ("sha256", "sha384", "sha512")
 EXPECTED_ELEMENT = "pkg_jtgallery"
 EXPECTED_TYPE = "package"
+REPOSITORY_URL = "https://github.com/joomtheme/JoomTheme-Gallery"
 
 
 class ValidationError(RuntimeError):
@@ -86,6 +89,19 @@ def verify_hashes(package_path: Path, update: ET.Element) -> None:
 
         if expected != actual:
             fail(f"{algorithm.upper()} mismatch for {package_path.name}")
+
+
+def verify_remote_package(download_url: str, package_path: Path) -> None:
+    request = urllib.request.Request(download_url, headers={"User-Agent": "JoomTheme-Release-Validator"})
+
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            payload = response.read()
+    except OSError as exc:
+        fail(f"Cannot download the published release asset: {exc}")
+
+    if payload != package_path.read_bytes():
+        fail("Published GitHub Release asset does not match the validated repository package")
 
 
 def verify_changelog(version: str) -> None:
@@ -171,7 +187,7 @@ def verify_package(package_path: Path, version: str) -> None:
                     fail("Module manifest does not identify mod_jtgallery")
 
 
-def main() -> int:
+def main(check_remote: bool = False) -> int:
     root = parse_xml(UPDATE_XML)
 
     if root.tag != "updates":
@@ -194,12 +210,16 @@ def main() -> int:
     version = node_text(update, "version")
     download_url = node_text(update.find("downloads"), "downloadurl")
     parsed_url = urllib.parse.urlparse(download_url)
-
-    if parsed_url.scheme != "https" or parsed_url.netloc != "raw.githubusercontent.com":
-        fail("The primary download must use the canonical HTTPS GitHub raw host")
-
     expected_name = f"pkg_jtgallery_v{version}.zip"
+    expected_release_url = f"{REPOSITORY_URL}/releases/tag/v{version}"
+    expected_download_url = f"{REPOSITORY_URL}/releases/download/v{version}/{expected_name}"
     package_name = PurePosixPath(parsed_url.path).name
+
+    if node_text(update, "infourl") != expected_release_url:
+        fail(f"infourl must point to {expected_release_url}")
+
+    if download_url != expected_download_url:
+        fail(f"Primary download must point to {expected_download_url}")
 
     if package_name != expected_name:
         fail(f"Download filename must be {expected_name}")
@@ -224,13 +244,29 @@ def main() -> int:
     verify_hashes(package_path, update)
     verify_package(package_path, version)
     verify_changelog(version)
+
+    if check_remote:
+        verify_remote_package(download_url, package_path)
+
     print(f"Validated JoomTheme Gallery {version}: XML, package manifests and SHA-256/384/512 checksums are correct.")
+
+    if check_remote:
+        print("Validated published GitHub Release asset: remote and repository packages are byte-for-byte identical.")
+
     return 0
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--check-remote",
+        action="store_true",
+        help="Download the GitHub Release asset and compare it with the repository package.",
+    )
+    arguments = parser.parse_args()
+
     try:
-        raise SystemExit(main())
+        raise SystemExit(main(check_remote=arguments.check_remote))
     except ValidationError as exc:
         print(f"Validation failed: {exc}", file=sys.stderr)
         raise SystemExit(1)

@@ -1,6 +1,6 @@
 # JoomTheme Gallery
 
-[Türkçe](README.tr-TR.md) · [Download 0.7.3](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/pkg_jtgallery_v0.7.3.zip) · [Support](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
+[Türkçe](README.tr-TR.md) · [Release 0.7.3](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) · [Download package](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) · [Support](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
 
 JoomTheme Gallery is a native Joomla 6 gallery extension distributed as one installable package:
 
@@ -28,7 +28,7 @@ The current stable release is **0.7.3**.
 
 ## Installation
 
-1. Download [`pkg_jtgallery_v0.7.3.zip`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/pkg_jtgallery_v0.7.3.zip).
+1. Download [`pkg_jtgallery_v0.7.3.zip`](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) from the [official release](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3).
 2. In Joomla Administrator, open **System → Install → Extensions**.
 3. Upload the package. Joomla installs both the component and the site module.
 4. Create a gallery, add images, then publish it through a menu item or a **JoomTheme Gallery** module.
@@ -43,6 +43,8 @@ The package registers the following public Joomla services:
 - Joomla changelog: [`updates/changelog.xml`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/changelog.xml)
 
 Joomla checks the feed from **System → Update → Extensions** and validates the published package against SHA-256, SHA-384 and SHA-512 checksums before installation.
+
+Installable packages are published as immutable GitHub Release assets. GitHub's automatically generated source archives are not Joomla installation packages.
 
 ## Documentation and support
 

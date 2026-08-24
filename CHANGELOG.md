@@ -2,7 +2,7 @@
 
 All notable changes to JoomTheme Gallery are documented here. The machine-readable Joomla changelog is published at [`updates/changelog.xml`](updates/changelog.xml).
 
-## 0.7.3 — 2026-08-24
+## [0.7.3](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) — 2026-08-24
 
 ### Fixed
 

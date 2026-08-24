@@ -1,6 +1,6 @@
 # JoomTheme Gallery
 
-[English](README.md) · [0.7.3 sürümünü indir](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/pkg_jtgallery_v0.7.3.zip) · [Destek](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
+[English](README.md) · [0.7.3 sürümü](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) · [Paketi indir](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) · [Destek](https://github.com/joomtheme/JoomTheme-Gallery/issues) · [JoomTheme](https://joomtheme.com)
 
 JoomTheme Gallery, tek kurulum paketiyle dağıtılan yerel bir Joomla 6 galeri eklentisidir:
 
@@ -28,7 +28,7 @@ Güncel kararlı sürüm **0.7.3**'tür.
 
 ## Kurulum
 
-1. [`pkg_jtgallery_v0.7.3.zip`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/pkg_jtgallery_v0.7.3.zip) paketini indirin.
+1. [`pkg_jtgallery_v0.7.3.zip`](https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip) paketini [resmî sürüm sayfasından](https://github.com/joomtheme/JoomTheme-Gallery/releases/tag/v0.7.3) indirin.
 2. Joomla yönetiminde **Sistem → Kurulum → Eklentiler** sayfasını açın.
 3. Paketi yükleyin. Joomla bileşeni ve site modülünü birlikte kurar.
 4. Bir galeri oluşturup görselleri ekleyin; ardından menü öğesi veya **JoomTheme Gallery** modülüyle yayınlayın.
@@ -43,6 +43,8 @@ Paket aşağıdaki genel Joomla servislerini otomatik olarak kaydeder:
 - Joomla değişiklik günlüğü: [`updates/changelog.xml`](https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/changelog.xml)
 
 Joomla, **Sistem → Güncelleme → Eklentiler** ekranından akışı denetler ve kurulumdan önce yayınlanan paketi SHA-256, SHA-384 ve SHA-512 karmalarıyla doğrular.
+
+Kurulabilir paketler değişmez GitHub Release varlıkları olarak yayınlanır. GitHub'ın otomatik oluşturduğu kaynak kodu arşivleri Joomla kurulum paketi değildir.
 
 ## Belgeleme ve destek
 
