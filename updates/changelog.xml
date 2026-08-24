@@ -1,1 +1,71 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<changelogs>
+    <changelog>
+        <element>pkg_jtgallery</element>
+        <type>package</type>
+        <version>0.7.2</version>
+        <addition>
+            <item>Added Developer and GitHub Issues links to the administrator dashboard.</item>
+            <item>Added the public Joomla update and changelog feeds.</item>
+        </addition>
+        <fix>
+            <item>Removed Joomla's unrelated generic Help button only from the JoomTheme Gallery Categories screen.</item>
+        </fix>
+        <change>
+            <item>Aligned the component, module and unified package at version 0.7.2.</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>com_jtgallery</element>
+        <type>component</type>
+        <version>0.7.2</version>
+        <addition>
+            <item>Added accessible project and support links to the administrator dashboard.</item>
+        </addition>
+        <fix>
+            <item>Removed the generic Help button from the extension's Categories context without changing Joomla core files.</item>
+        </fix>
+        <change>
+            <item>Connected the component to the hosted changelog feed.</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>mod_jtgallery</element>
+        <type>module</type>
+        <version>0.7.2</version>
+        <change>
+            <item>Aligned the module with component and package version 0.7.2.</item>
+            <item>Connected the module to the hosted changelog feed.</item>
+        </change>
+        <note>
+            <item>No frontend layout, settings or lightbox behaviour changed in this release.</item>
+        </note>
+    </changelog>
+    <changelog>
+        <element>pkg_jtgallery</element>
+        <type>package</type>
+        <version>0.7.1</version>
+        <addition>
+            <item>Introduced the unified Joomla package containing the component and site module.</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>com_jtgallery</element>
+        <type>component</type>
+        <version>0.7.1</version>
+        <fix>
+            <item>Removed administrator-menu quick-task parameters rejected by the JED Checker manifest schema.</item>
+        </fix>
+        <note>
+            <item>Dashboard quick actions remain available.</item>
+        </note>
+    </changelog>
+    <changelog>
+        <element>mod_jtgallery</element>
+        <type>module</type>
+        <version>0.7.1</version>
+        <change>
+            <item>Aligned the module version with the JoomTheme Gallery component.</item>
+        </change>
+    </changelog>
+</changelogs>
