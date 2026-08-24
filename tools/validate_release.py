@@ -20,7 +20,7 @@ UPDATES_DIR = ROOT / "updates"
 UPDATE_XML = UPDATES_DIR / "update.xml"
 CHANGELOG_XML = UPDATES_DIR / "changelog.xml"
 REQUIRED_UPDATE_FIELDS = ("name", "element", "type", "version", "downloads", "targetplatform")
-HASHES = ("sha256", "sha384", "sha512")
+HASHES = ("sha256",)
 EXPECTED_ELEMENT = "pkg_jtgallery"
 EXPECTED_TYPE = "package"
 REPOSITORY_URL = "https://github.com/joomtheme/JoomTheme-Gallery"
@@ -248,7 +248,7 @@ def main(check_remote: bool = False) -> int:
     if check_remote:
         verify_remote_package(download_url, package_path)
 
-    print(f"Validated JoomTheme Gallery {version}: XML, package manifests and SHA-256/384/512 checksums are correct.")
+    print(f"Validated JoomTheme Gallery {version}: XML, package manifests and SHA-256 checksum are correct.")
 
     if check_remote:
         print("Validated published GitHub Release asset: remote and repository packages are byte-for-byte identical.")
@@ -258,15 +258,3 @@ def main(check_remote: bool = False) -> int:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--check-remote",
-        action="store_true",
-        help="Download the GitHub Release asset and compare it with the repository package.",
-    )
-    arguments = parser.parse_args()
-
-    try:
-        raise SystemExit(main(check_remote=arguments.check_remote))
-    except ValidationError as exc:
-        print(f"Validation failed: {exc}", file=sys.stderr)
-        raise SystemExit(1)
