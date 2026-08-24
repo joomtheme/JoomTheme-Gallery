@@ -5,10 +5,10 @@
         <description>Joomla 6 native gallery component and responsive site module.</description>
         <element>pkg_jtgallery</element>
         <type>package</type>
-        <version>0.7.2</version>
-        <infourl title="JoomTheme Gallery 0.7.2">https://github.com/joomtheme/JoomTheme-Gallery</infourl>
+        <version>0.7.3</version>
+        <infourl title="JoomTheme Gallery 0.7.3">https://github.com/joomtheme/JoomTheme-Gallery</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/pkg_jtgallery_v0.7.2.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/pkg_jtgallery_v0.7.3.zip</downloadurl>
         </downloads>
         <changelogurl>https://raw.githubusercontent.com/joomtheme/JoomTheme-Gallery/main/updates/changelog.xml</changelogurl>
         <tags>
@@ -18,8 +18,8 @@
         <maintainerurl>https://joomtheme.com</maintainerurl>
         <targetplatform name="joomla" version="6\.1"/>
         <php_minimum>8.3.0</php_minimum>
-        <sha256>486a61dd14c29d5f23be7b99c72b5001d57b4edb3940c88607c36f0c996c0ae5</sha256>
-        <sha384>1c4088a9bd97115a0843db4906757a224c492a4c98557b98ecd4a52ab4897a73239281c2649bab7bfe7c2a868285dc02</sha384>
-        <sha512>5bae2b155594f605e60526e5fd40ce7cad01c2fe45c73a8ddde46e7dde004c5c20dc874b408ad6ff16923b391aae7e155f136212188e0407f67ff8d25a2b949c</sha512>
+        <sha256>f89534d6223a8a58d5608d7d8361b23c5bd2ef10295466379b53457328da3dbb</sha256>
+        <sha384>9684bc108767feea0911100dcb9b094302afb7db89034cd95bc53c6d1be05d03ddce73bb7549829454e820586952b0e5</sha384>
+        <sha512>179021d3358fd1526370211e2c7c1f8f6881bb884a648547b575dc5b2e59e21ef6bf34a657355bbf12b037e86c724fd56f739a302ca54b0460961ccad43aa079</sha512>
     </update>
 </updates>

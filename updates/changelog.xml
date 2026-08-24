@@ -3,6 +3,38 @@
     <changelog>
         <element>pkg_jtgallery</element>
         <type>package</type>
+        <version>0.7.3</version>
+        <fix>
+            <item>Added standard package system-language files required by JED validation.</item>
+            <item>Added package author email and author URL metadata.</item>
+            <item>Removed leading whitespace from external-link accessibility translation strings.</item>
+        </fix>
+        <change>
+            <item>Aligned the component, module and unified package at version 0.7.3.</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>com_jtgallery</element>
+        <type>component</type>
+        <version>0.7.3</version>
+        <fix>
+            <item>Moved accessibility spacing from the language value into dashboard markup for JED compliance.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>mod_jtgallery</element>
+        <type>module</type>
+        <version>0.7.3</version>
+        <change>
+            <item>Aligned the module with component and package version 0.7.3.</item>
+        </change>
+        <note>
+            <item>No frontend layout, settings or lightbox behaviour changed in this release.</item>
+        </note>
+    </changelog>
+    <changelog>
+        <element>pkg_jtgallery</element>
+        <type>package</type>
         <version>0.7.2</version>
         <addition>
             <item>Added Developer and GitHub Issues links to the administrator dashboard.</item>
