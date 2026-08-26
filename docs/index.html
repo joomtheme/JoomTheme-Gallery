@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JoomTheme Gallery — Native Gallery &amp; Lightbox for Joomla 6</title>
     <meta name="description" content="Explore JoomTheme Gallery, a native Joomla 6 gallery component and responsive site module with an accessible lightbox.">
-    <meta name="theme-color" content="#17233d">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:type" content="website">
     <meta property="og:title" content="JoomTheme Gallery for Joomla 6">
     <meta property="og:description" content="A native gallery component, responsive module and accessible lightbox for Joomla 6.">
@@ -22,9 +22,7 @@
         <div class="shell header-inner">
             <a class="brand" href="#top" aria-label="JoomTheme Gallery home">
                 <span class="brand-mark" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img">
-                        <path d="M4.5 4.5h10a2.5 2.5 0 0 1 2.5 2.5v.5h.5A2.5 2.5 0 0 1 20 10v7.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5V7a2.5 2.5 0 0 1 .5-2.5Zm2 3V16l2.8-3 2.1 2.1 2.8-3.1 3.3 4.1V10h-3A2.5 2.5 0 0 1 12 7.5h-5.5Zm8-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/>
-                    </svg>
+                    <svg viewBox="0 0 24 24" role="img"><path d="M4.5 4.5h10a2.5 2.5 0 0 1 2.5 2.5v.5h.5A2.5 2.5 0 0 1 20 10v7.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5V7a2.5 2.5 0 0 1 .5-2.5Zm2 3V16l2.8-3 2.1 2.1 2.8-3.1 3.3 4.1V10h-3A2.5 2.5 0 0 1 12 7.5h-5.5Zm8-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></svg>
                 </span>
                 <span>JoomTheme <strong>Gallery</strong></span>
             </a>
@@ -39,21 +37,21 @@
                 <a href="#frontend">Frontend</a>
                 <a href="#administrator">Administrator</a>
                 <a href="#module">Module</a>
-                <a href="https://github.com/joomtheme/JoomTheme-Gallery">Documentation</a>
+                <a href="https://github.com/joomtheme/JoomTheme-Gallery">GitHub</a>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
         <section id="top" class="hero">
-            <div class="shell hero-grid">
+            <div class="shell">
                 <div class="hero-copy">
                     <div class="eyebrow"><span>Stable 0.7.3</span> Joomla 6.1 native</div>
                     <h1>A focused gallery experience for Joomla&nbsp;6</h1>
                     <p class="hero-lead">Create, organise and publish responsive galleries with a Joomla-native component, site module and keyboard-friendly lightbox.</p>
                     <div class="hero-actions">
-                        <a class="button button-primary" href="#frontend">Explore the demo</a>
-                        <a class="button button-secondary" href="https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip">Download 0.7.3</a>
+                        <a class="button button-primary" href="https://github.com/joomtheme/JoomTheme-Gallery/releases/download/v0.7.3/pkg_jtgallery_v0.7.3.zip">Download 0.7.3</a>
+                        <a class="button button-secondary" href="https://github.com/joomtheme/JoomTheme-Gallery">View on GitHub</a>
                     </div>
                     <ul class="hero-meta" aria-label="Compatibility">
                         <li>Joomla 6.1.x</li>
@@ -62,19 +60,21 @@
                     </ul>
                 </div>
 
-                <button class="hero-preview screenshot-button" type="button" data-image="assets/images/gallery-list.webp" data-caption="Responsive gallery list rendered with Joomla's Cassiopeia template." aria-label="Open the frontend gallery list screenshot">
-                    <img src="assets/images/gallery-list.webp" width="1536" height="825" alt="Three responsive gallery cards displayed in Joomla's Cassiopeia template">
-                    <span class="zoom-label" aria-hidden="true">View screenshot</span>
-                </button>
+                <div class="hero-preview-wrap">
+                    <button class="hero-preview screenshot-button" type="button" data-image="assets/images/gallery-list.webp" data-caption="Responsive gallery list rendered with Joomla's Cassiopeia template." aria-label="Open the frontend gallery list screenshot">
+                        <img src="assets/images/gallery-list.webp" width="1536" height="825" alt="Three responsive gallery cards displayed in Joomla's Cassiopeia template">
+                        <span class="zoom-label" aria-hidden="true">View screenshot</span>
+                    </button>
+                </div>
             </div>
         </section>
 
-        <section id="features" class="section section-soft" aria-labelledby="features-title">
+        <section id="features" class="section" aria-labelledby="features-title">
             <div class="shell">
                 <div class="section-heading centered">
                     <p class="kicker">Built for Joomla</p>
-                    <h2 id="features-title">Familiar workflows, clean presentation</h2>
-                    <p>JoomTheme Gallery follows Joomla conventions in the administrator and stays out of the way on the frontend.</p>
+                    <h2 id="features-title">Native where it matters. Quiet everywhere else.</h2>
+                    <p>JoomTheme Gallery follows Joomla conventions in the administrator and keeps the frontend clean, responsive and easy to navigate.</p>
                 </div>
 
                 <div class="feature-grid">
@@ -86,12 +86,12 @@
                     <article class="feature-card">
                         <span class="feature-icon" aria-hidden="true">↔</span>
                         <h3>Responsive layouts</h3>
-                        <p>Flexible gallery cards and image grids designed for Joomla's frontend template environment.</p>
+                        <p>Flexible gallery cards and image grids designed to sit naturally inside Joomla templates.</p>
                     </article>
                     <article class="feature-card">
                         <span class="feature-icon" aria-hidden="true">⌨</span>
                         <h3>Accessible lightbox</h3>
-                        <p>Keyboard, touch and pointer navigation with clear controls and a softer modal-style backdrop.</p>
+                        <p>Keyboard, touch and pointer navigation with clear controls and a balanced backdrop.</p>
                     </article>
                     <article class="feature-card">
                         <span class="feature-icon" aria-hidden="true">1×</span>
@@ -102,85 +102,88 @@
             </div>
         </section>
 
-        <section id="frontend" class="section" aria-labelledby="frontend-title">
+        <section id="frontend" class="section section-soft" aria-labelledby="frontend-title">
             <div class="shell">
                 <div class="section-heading">
                     <p class="kicker">Frontend</p>
-                    <h2 id="frontend-title">From gallery overview to immersive viewing</h2>
-                    <p>Visitors can browse gallery cards, open an individual gallery and move through images without leaving the page.</p>
+                    <h2 id="frontend-title">Let the gallery be the interface</h2>
+                    <p>Visitors move from the gallery overview to individual images without unnecessary chrome getting in the way.</p>
                 </div>
 
-                <div class="showcase-grid">
-                    <figure class="shot-card shot-card-wide">
-                        <button class="screenshot-button" type="button" data-image="assets/images/gallery-list.webp" data-caption="Gallery overview with responsive cards, categories, descriptions and image counts." aria-label="Open gallery overview screenshot">
-                            <img src="assets/images/gallery-list.webp" width="1536" height="825" loading="lazy" alt="Frontend gallery overview containing three gallery cards">
-                        </button>
-                        <figcaption><strong>Gallery overview</strong><span>Responsive cards with cover, category, description and image count.</span></figcaption>
-                    </figure>
+                <figure class="lead-shot">
+                    <button class="screenshot-button" type="button" data-image="assets/images/gallery-view.webp" data-caption="Individual gallery view with a clean configurable image grid." aria-label="Open individual gallery screenshot">
+                        <img src="assets/images/gallery-view.webp" width="1536" height="825" loading="lazy" alt="Individual gallery page displaying images in a responsive grid">
+                        <span class="zoom-label" aria-hidden="true">View screenshot</span>
+                    </button>
+                    <figcaption><strong>Gallery view</strong><span>Clear titles, metadata and configurable image grids.</span></figcaption>
+                </figure>
 
-                    <figure class="shot-card">
-                        <button class="screenshot-button" type="button" data-image="assets/images/gallery-view.webp" data-caption="Individual gallery view with a clean four-column image grid." aria-label="Open individual gallery screenshot">
-                            <img src="assets/images/gallery-view.webp" width="1536" height="825" loading="lazy" alt="Individual gallery page displaying four images in a row">
-                        </button>
-                        <figcaption><strong>Gallery view</strong><span>Clear titles, metadata and configurable image grids.</span></figcaption>
-                    </figure>
-
-                    <figure class="shot-card">
-                        <button class="screenshot-button" type="button" data-image="assets/images/lightbox.webp" data-caption="Lightbox with previous, next and close controls plus caption and image position." aria-label="Open lightbox screenshot">
-                            <img src="assets/images/lightbox.webp" width="1536" height="825" loading="lazy" alt="Gallery image opened in a large lightbox with navigation controls">
-                        </button>
-                        <figcaption><strong>Lightbox</strong><span>Keyboard- and touch-friendly navigation with a balanced backdrop.</span></figcaption>
-                    </figure>
+                <div class="story-stack">
+                    <div class="story-row">
+                        <div class="story-copy">
+                            <span class="step-number">01 · LIGHTBOX</span>
+                            <h3>Immersive viewing without leaving the page</h3>
+                            <p>A focused lightbox keeps the image front and centre while retaining keyboard, touch and pointer navigation.</p>
+                        </div>
+                        <figure class="shot-card">
+                            <button class="screenshot-button" type="button" data-image="assets/images/lightbox.webp" data-caption="Lightbox with previous, next and close controls plus caption and image position." aria-label="Open lightbox screenshot">
+                                <img src="assets/images/lightbox.webp" width="1536" height="825" loading="lazy" alt="Gallery image opened in a large lightbox with navigation controls">
+                                <span class="zoom-label" aria-hidden="true">View screenshot</span>
+                            </button>
+                            <figcaption><strong>Accessible lightbox</strong><span>Large imagery with simple navigation controls.</span></figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="administrator" class="section section-dark" aria-labelledby="administrator-title">
+        <section id="administrator" class="section" aria-labelledby="administrator-title">
             <div class="shell">
-                <div class="section-heading">
+                <div class="section-heading centered">
                     <p class="kicker">Administrator</p>
                     <h2 id="administrator-title">Feels at home in Joomla</h2>
-                    <p>An Atum-aligned dashboard, native toolbars and purposeful empty states keep gallery management approachable.</p>
+                    <p>An Atum-aligned dashboard, native toolbars and familiar forms keep gallery management straightforward.</p>
                 </div>
 
-                <div class="admin-feature">
-                    <div class="admin-copy">
-                        <span class="step-number">01</span>
-                        <h3>See the whole library at a glance</h3>
-                        <p>The dashboard summarises galleries, images, categories and storage, while quick actions keep common tasks close.</p>
-                    </div>
-                    <figure class="shot-card">
+                <div class="admin-lead">
+                    <figure class="lead-shot">
                         <button class="screenshot-button" type="button" data-image="assets/images/dashboard.webp" data-caption="JoomTheme Gallery administrator dashboard." aria-label="Open administrator dashboard screenshot">
                             <img src="assets/images/dashboard.webp" width="1520" height="1238" loading="lazy" alt="JoomTheme Gallery dashboard with statistics, recent content and quick actions">
+                            <span class="zoom-label" aria-hidden="true">View screenshot</span>
                         </button>
                         <figcaption><strong>Dashboard</strong><span>Overview, shortcuts and project information in one screen.</span></figcaption>
                     </figure>
                 </div>
 
-                <div class="admin-feature admin-feature-reverse">
-                    <div class="admin-copy">
-                        <span class="step-number">02</span>
-                        <h3>Create and organise in one workflow</h3>
-                        <p>Add gallery details, choose a Joomla category, manage publication settings and upload images from the same editor.</p>
+                <div class="story-stack">
+                    <div class="story-row reverse">
+                        <div class="story-copy">
+                            <span class="step-number">02 · EDITOR</span>
+                            <h3>Create and organise in one workflow</h3>
+                            <p>Add gallery details, choose a Joomla category, manage publishing and metadata, then upload images from the same editor.</p>
+                        </div>
+                        <figure class="shot-card">
+                            <button class="screenshot-button" type="button" data-image="assets/images/gallery-editor.webp" data-caption="Gallery editor with publishing, metadata and image management controls." aria-label="Open gallery editor screenshot">
+                                <img src="assets/images/gallery-editor.webp" width="1520" height="1620" loading="lazy" alt="Gallery editing form with title, category, description and uploaded images">
+                                <span class="zoom-label" aria-hidden="true">View screenshot</span>
+                            </button>
+                            <figcaption><strong>Gallery editor</strong><span>Details, publishing, SEO metadata and uploads together.</span></figcaption>
+                        </figure>
                     </div>
-                    <figure class="shot-card portrait-shot">
-                        <button class="screenshot-button" type="button" data-image="assets/images/gallery-editor.webp" data-caption="Gallery editor with publishing, metadata and image management controls." aria-label="Open gallery editor screenshot">
-                            <img src="assets/images/gallery-editor.webp" width="1520" height="1620" loading="lazy" alt="Gallery editing form with title, category, description and uploaded images">
-                        </button>
-                        <figcaption><strong>Gallery editor</strong><span>Details, publishing, SEO metadata and uploads together.</span></figcaption>
-                    </figure>
                 </div>
 
                 <div class="mini-gallery" aria-label="Additional administrator screenshots">
                     <figure class="shot-card">
                         <button class="screenshot-button" type="button" data-image="assets/images/categories.webp" data-caption="Categories managed with Joomla's native category workflow." aria-label="Open categories screenshot">
                             <img src="assets/images/categories.webp" width="1536" height="825" loading="lazy" alt="Joomla administrator category list for JoomTheme Gallery">
+                            <span class="zoom-label" aria-hidden="true">View screenshot</span>
                         </button>
                         <figcaption><strong>Native categories</strong><span>Joomla category workflows and access controls.</span></figcaption>
                     </figure>
                     <figure class="shot-card">
                         <button class="screenshot-button" type="button" data-image="assets/images/component-options.webp" data-caption="Component options grouped into focused tabs." aria-label="Open component options screenshot">
                             <img src="assets/images/component-options.webp" width="1520" height="1012" loading="lazy" alt="JoomTheme Gallery options page with display settings">
+                            <span class="zoom-label" aria-hidden="true">View screenshot</span>
                         </button>
                         <figcaption><strong>Component options</strong><span>Global display, gallery, image and permission settings.</span></figcaption>
                     </figure>
@@ -188,12 +191,12 @@
             </div>
         </section>
 
-        <section id="module" class="section" aria-labelledby="module-title">
+        <section id="module" class="section section-soft" aria-labelledby="module-title">
             <div class="shell module-grid">
                 <div class="section-heading">
                     <p class="kicker">Site module</p>
                     <h2 id="module-title">Place a selected gallery anywhere</h2>
-                    <p>The included module supports image limits, ordering, responsive columns, thumbnail ratios, captions and optional lightbox behaviour.</p>
+                    <p>The included module gives you useful display controls without turning a simple gallery into a page builder.</p>
                     <ul class="check-list">
                         <li>Choose any published gallery</li>
                         <li>Control image count and ordering</li>
@@ -205,29 +208,32 @@
                 <figure class="shot-card">
                     <button class="screenshot-button" type="button" data-image="assets/images/module-settings.webp" data-caption="JoomTheme Gallery site module configuration." aria-label="Open module settings screenshot">
                         <img src="assets/images/module-settings.webp" width="1520" height="1128" loading="lazy" alt="JoomTheme Gallery module settings in Joomla administrator">
+                        <span class="zoom-label" aria-hidden="true">View screenshot</span>
                     </button>
                     <figcaption><strong>Module settings</strong><span>Useful controls presented with Joomla's familiar form fields.</span></figcaption>
                 </figure>
             </div>
         </section>
 
-        <section class="section section-soft" aria-labelledby="states-title">
+        <section class="section" aria-labelledby="states-title">
             <div class="shell">
                 <div class="section-heading centered compact-heading">
                     <p class="kicker">Guided setup</p>
-                    <h2 id="states-title">Clear next steps for a new installation</h2>
-                    <p>Purposeful empty states guide administrators directly to the first useful action.</p>
+                    <h2 id="states-title">Useful from the first empty screen</h2>
+                    <p>Purposeful empty states point administrators directly to the next useful action.</p>
                 </div>
-                <div class="showcase-grid two-column">
+                <div class="states-grid">
                     <figure class="shot-card">
                         <button class="screenshot-button" type="button" data-image="assets/images/empty-galleries.webp" data-caption="Empty gallery list with a clear Create Gallery action." aria-label="Open empty galleries screenshot">
                             <img src="assets/images/empty-galleries.webp" width="1536" height="825" loading="lazy" alt="Empty galleries page prompting the administrator to create a gallery">
+                            <span class="zoom-label" aria-hidden="true">View screenshot</span>
                         </button>
                         <figcaption><strong>First gallery</strong><span>A direct starting point without a dead-end table.</span></figcaption>
                     </figure>
                     <figure class="shot-card">
                         <button class="screenshot-button" type="button" data-image="assets/images/empty-images.webp" data-caption="Empty image library with guidance to create or open a gallery." aria-label="Open empty images screenshot">
                             <img src="assets/images/empty-images.webp" width="1536" height="825" loading="lazy" alt="Empty image library explaining how to upload the first images">
+                            <span class="zoom-label" aria-hidden="true">View screenshot</span>
                         </button>
                         <figcaption><strong>First images</strong><span>Contextual guidance points to the upload workflow.</span></figcaption>
                     </figure>
@@ -271,12 +277,14 @@
     </footer>
 
     <dialog class="image-dialog" aria-labelledby="dialog-caption">
-        <div class="dialog-toolbar">
-            <p id="dialog-caption"></p>
-            <button class="dialog-close" type="button" aria-label="Close screenshot">×</button>
-        </div>
-        <div class="dialog-image-wrap">
-            <img src="" alt="">
+        <div class="dialog-inner">
+            <div class="dialog-image-wrap">
+                <img src="" alt="">
+            </div>
+            <div class="dialog-footer">
+                <p id="dialog-caption"></p>
+                <button class="dialog-close" type="button">Close</button>
+            </div>
         </div>
     </dialog>
 </body>
